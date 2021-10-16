@@ -1,6 +1,6 @@
 # Grafana Dashboard for qBittorrent
 
-<img src="https://github.com/caseyscarborough/qbittorrent-grafana-dashboard/blob/master/images/logo.png"width=100>
+<img src="https://github.com/caseyscarborough/qbittorrent-grafana-dashboard/blob/master/images/logo.png" width=100>
 
 This repository contains a Grafana dashboard for qBittorrent using Prometheus.
 

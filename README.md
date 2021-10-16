@@ -1,5 +1,7 @@
 # Grafana Dashboard for qBittorrent
 
+<img src="https://github.com/caseyscarborough/qbittorrent-grafana-dashboard/blob/master/images/logo.png"width=100>
+
 This repository contains a Grafana dashboard for qBittorrent using Prometheus.
 
 It integrates with [qbittorrent-exporter](https://github.com/caseyscarborough/qbittorrent-exporter).
@@ -21,3 +23,7 @@ It shows the following metrics:
 - Amount remaining by torrent
 - Incomplete torrent progress
 - Download/upload speed by torrent
+
+![](https://github.com/caseyscarborough/qbittorrent-grafana-dashboard/blob/master/images/top.png)
+
+![](https://github.com/caseyscarborough/qbittorrent-grafana-dashboard/blob/master/images/bottom.png)

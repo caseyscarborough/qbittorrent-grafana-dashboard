@@ -921,7 +921,7 @@
                         "index": 6,
                         "text": "Paused (Down)"
                       },
-                      "pausedUL": {
+                      "pausedUP": {
                         "color": "dark-yellow",
                         "index": 7,
                         "text": "Paused (Up)"

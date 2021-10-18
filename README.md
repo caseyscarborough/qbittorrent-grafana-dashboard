@@ -26,7 +26,14 @@ It shows the following metrics:
 
 ## Requirements
 
-This dashboard requires [grafana-piechart-panel](https://grafana.com/grafana/plugins/grafana-piechart-panel/) for some panels. You can install by running any of these:
+If you have an older version of Grafana (earlier than 7.0.0) use the `dashboard-legacy.json` file with qbittorrent-exporter v1.0.0.
+
+If you have a newer version use the `dashboard-modern.json` file with the latest version of qbittorrent-exporter.
+
+This dashboard also requires [grafana-piechart-panel](https://grafana.com/grafana/plugins/grafana-piechart-panel/) for some panels. 
+
+<details>
+	<summary>View Piechart Installation Instructions</summary>
 
 ```bash
 # Grafana CLI
@@ -44,6 +51,7 @@ mv piechart-panel /var/lib/grafana/plugins/grafana-piechart-panel
 ```
 
 Restart your Grafana server after installing the plugin.
+</details>
 
 ## Screenshots
 

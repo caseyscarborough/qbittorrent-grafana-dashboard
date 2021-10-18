@@ -1137,7 +1137,13 @@
       "id": 24,
       "interval": "",
       "options": {
-        "showHeader": true
+        "showHeader": true,
+        "sortBy": [
+          {
+            "desc": false,
+            "displayName": "Name"
+          }
+        ]
       },
       "pluginVersion": "8.2.0",
       "repeat": null,
@@ -1496,6 +1502,85 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "States",
+      "transformations": [
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "downloading",
+            "renamePattern": "Downloading"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "missingFiles",
+            "renamePattern": "Missing"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "pausedDL",
+            "renamePattern": "Paused (Downloading)"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "pausedUP",
+            "renamePattern": "Paused (Uploading)"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "queuedDL",
+            "renamePattern": "Queued (Downloading)"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "queuedUP",
+            "renamePattern": "Queued (Uploading)"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "stalledUP",
+            "renamePattern": "Stalled (Uploading)"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "stalledDL",
+            "renamePattern": "Stalled (Downloading)"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "uploading",
+            "renamePattern": "Uploading"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "checkingDL",
+            "renamePattern": "Checking (Downloading)"
+          }
+        },
+        {
+          "id": "renameByRegex",
+          "options": {
+            "regex": "checkingUP",
+            "renamePattern": "Checking (Uploading)"
+          }
+        }
+      ],
       "type": "grafana-piechart-panel",
       "valueName": "current"
     },
@@ -1520,10 +1605,12 @@
       "interval": null,
       "legend": {
         "percentage": true,
+        "percentageDecimals": 2,
         "show": false,
-        "values": true
+        "sideWidth": null,
+        "values": false
       },
-      "legendType": "Under graph",
+      "legendType": "Right side",
       "links": [],
       "maxDataPoints": 3,
       "nullPointMode": "connected",
@@ -1827,7 +1914,7 @@
     "list": []
   },
   "time": {
-    "from": "now-6h",
+    "from": "now-1h",
     "to": "now"
   },
   "timepicker": {
@@ -1847,5 +1934,5 @@
   "timezone": "",
   "title": "qBittorrent Dashboard",
   "uid": "OEyH9tQZk",
-  "version": 6
+  "version": 7
 }

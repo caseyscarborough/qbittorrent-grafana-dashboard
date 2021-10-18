@@ -53,8 +53,6 @@ mv piechart-panel /var/lib/grafana/plugins/grafana-piechart-panel
 Restart your Grafana server after installing the plugin.
 </details>
 
-## Screenshots
+## Preview
 
-![](https://github.com/caseyscarborough/qbittorrent-grafana-dashboard/blob/master/images/top.png)
-
-![](https://github.com/caseyscarborough/qbittorrent-grafana-dashboard/blob/master/images/bottom.png)
+![](https://github.com/caseyscarborough/qbittorrent-grafana-dashboard/blob/master/images/dashboard.png)
